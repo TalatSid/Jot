@@ -12,5 +12,5 @@ class Task(models.Model):
     sprint = models.CharField(max_length = 10)
     status = models.CharField(max_length = 15)
 
-    def __str__(self):
-         return f"{self.task_desc} {self.tasktyp} {self.estimate} {self.spent} {self.owner} {self.email} {self.sprint} {self.status}"
+     def __str__(self):
+         return f"{self.item} ({self.cost})"

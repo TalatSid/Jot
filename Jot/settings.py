@@ -25,12 +25,13 @@ SECRET_KEY = 'lj1s%1$dv9^@q4k+3e^55)(-67x!f558uvzdv(5-nw*xg4k^f5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'dash.apps.DashConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
